@@ -43,6 +43,7 @@ def start_game():
 
 
 def main():
+    print("Welcome to the Brain Games!")
     start_game()
 
 
