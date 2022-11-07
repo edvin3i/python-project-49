@@ -36,7 +36,7 @@ def start_game():
         else:
             print(f"'{user_answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{right_answer}'.")
-            print("Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             return
         try_num += 1
     print(f'Congratulations, {name}!')
