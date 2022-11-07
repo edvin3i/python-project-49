@@ -7,7 +7,7 @@ from random import randint
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(f'Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     return name
 
 
@@ -19,7 +19,7 @@ def is_even(num):
 
 def ask_question(num):
     print(f'Question: {num}')
-    answer = prompt.string(f'Your answer: ')
+    answer = prompt.string('Your answer: ')
     return answer
 
 
@@ -34,7 +34,9 @@ def start_game():
         if right_answer == user_answer:
             print('Correct!')
         else:
-            print(f"""'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!""")
+            print(f"'{user_answer}' is wrong answer ;(. ", end='')
+            print(f"Correct answer was '{right_answer}'.")
+            print("Let's try again, {name}!")
             return
         try_num += 1
     print(f'Congratulations, {name}!')
