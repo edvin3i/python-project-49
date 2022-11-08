@@ -2,6 +2,7 @@
 
 from games import game_even
 
+
 def main():
     game_even.start_even_game()
 

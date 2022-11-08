@@ -5,6 +5,11 @@
 ### <h2>Brain Calc Game</h2>
 [![asciicast](https://asciinema.org/a/GHcHhWXLTl9go7cyfHWeJZR3t.svg)](https://asciinema.org/a/GHcHhWXLTl9go7cyfHWeJZR3t)
 
+
+### <h2>Brain GCD Game</h2>
+[![asciicast](https://asciinema.org/a/0FlKv5CTz5LiVMZxwdXMrZ4J6.svg)](https://asciinema.org/a/0FlKv5CTz5LiVMZxwdXMrZ4J6)
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/edvin3i/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/edvin3i/python-project-49/actions)
 
