@@ -11,8 +11,8 @@ def is_prime(num):
 
 
 def start_prime_game():
-    name = welcome_user('Answer "yes" if given number is prime. '
-                        'Otherwise answer "no".')
+    name = welcome_user('Number is prime? Type "yes" '
+                        'And type "no" if it\'s not true')
 
     questions = get_num_list(2, 1234, 3)
     right_answers = [is_prime(question) for question in questions]
