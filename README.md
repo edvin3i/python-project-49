@@ -10,6 +10,9 @@
 [![asciicast](https://asciinema.org/a/0FlKv5CTz5LiVMZxwdXMrZ4J6.svg)](https://asciinema.org/a/0FlKv5CTz5LiVMZxwdXMrZ4J6)
 
 
+### <h2>Brain Progression Game</h2>
+[![asciicast](https://asciinema.org/a/FBKmnFMOGlDN5kUZg4wF2tDps.svg)](https://asciinema.org/a/FBKmnFMOGlDN5kUZg4wF2tDps)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/edvin3i/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/edvin3i/python-project-49/actions)
 
