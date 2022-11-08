@@ -1,12 +1,20 @@
 import prompt
+from random import randint
 
 
-def welcome_user():
+def welcome_user(text):
     """Greets user and asks his/her name. Returns user's name"""
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+    print(text)
     return name
+
+
+def get_num_list(start, stop, count):
+    """Parameters: start, stop, cunt.
+    Returns list of random nums"""
+    return [randint(start, stop) for x in range(count)]
 
 
 def ask_question(question):

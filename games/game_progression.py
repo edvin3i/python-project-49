@@ -26,8 +26,7 @@ def get_progression(max_num_items=5):
 
 
 def start_progression_game():
-    name = welcome_user()
-    print('What number is missing in the progression?')
+    name = welcome_user('What number is missing in the progression?')
 
     questions, right_answers = get_progression()
     game_cycle(name, questions, right_answers)

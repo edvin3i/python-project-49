@@ -15,8 +15,7 @@ def get_gcd(couple_nums):
 
 
 def start_gcd_game():
-    name = welcome_user()
-    print("Find the greatest common divisor of given numbers.")
+    name = welcome_user('Find the greatest common divisor of given numbers.')
 
     questions = [get_couple_nums() for x in range(3)]
     right_answers = [get_gcd(couple) for couple in questions]

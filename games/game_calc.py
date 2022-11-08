@@ -10,8 +10,7 @@ def get_expression():
 
 
 def start_calc_game():
-    name = welcome_user()
-    print("What is the result of the expression?")
+    name = welcome_user('What is the result of the expression?')
 
     questions = [get_expression() for x in range(3)]
     right_answers = [str(eval(expression)) for expression in questions]
