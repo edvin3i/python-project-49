@@ -4,9 +4,9 @@
 
 - Calculator
 - Even numbers
-- Greater Common Devisor
+- Greater Common Divisor
 - Prime numbers
-- Ariphmetic Progression
+- Arithmetic Progression
 
 
 
