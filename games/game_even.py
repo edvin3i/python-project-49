@@ -1,7 +1,7 @@
 from games.common_core import welcome_user
-from games.common_core import get_num_list
 from games.common_core import game_cycle
 from random import randint
+
 
 def is_even(num):
     if num % 2:
