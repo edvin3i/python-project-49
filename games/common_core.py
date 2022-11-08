@@ -17,7 +17,8 @@ def ask_question(question):
 
 
 def game_cycle(name, questions, right_answers):
-    """Main game cycle. Recive username, list with questions and list with correct answers"""
+    """Main game cycle. Recive username,
+     list with questions and list with correct answers"""
     try_num = 0
     while try_num < 3:
         user_answer = ask_question(questions[try_num]).lower()
