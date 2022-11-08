@@ -9,12 +9,12 @@ def get_progression(max_num_items=5):
     sequences = []
     missed_items = []
     for i in range(3):
-        d_const = randint(1, 9)
+        D_CONST = randint(1, 9)
         missed_index = randint(0, max_num_items - 1)
         start = randint(1, 99)
         seq = []
         for j in range(max_num_items):
-            start = start + d_const
+            start = start + D_CONST
             seq.append(str(start))
         missed_items.append(seq[missed_index])
         seq[missed_index] = '..'
