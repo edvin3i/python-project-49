@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.3.0"
 description = "My own python-project for Hexlet course."
 authors = ["edvin3i <edviniii@gmail.com>"]
 license = "MIT"
