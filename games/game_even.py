@@ -10,7 +10,8 @@ def is_even(num):
 
 
 def start_even_game():
-    name = welcome_user('Answer "yes" if the number is even, otherwise answer "no".')
+    name = welcome_user('Answer "yes" if the number is even, '
+                        'otherwise answer "no".')
 
     questions = get_num_list(1, 100, 3)
     right_answers = [is_even(num) for num in questions]
