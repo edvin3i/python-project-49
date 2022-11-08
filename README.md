@@ -13,6 +13,10 @@
 ### <h2>Brain Progression Game</h2>
 [![asciicast](https://asciinema.org/a/FBKmnFMOGlDN5kUZg4wF2tDps.svg)](https://asciinema.org/a/FBKmnFMOGlDN5kUZg4wF2tDps)
 
+
+### <h2>Brain Prime Game</h2>
+[![asciicast](https://asciinema.org/a/Py4VGT4T5YQyFFb12TpX8m2NO.svg)](https://asciinema.org/a/Py4VGT4T5YQyFFb12TpX8m2NO)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/edvin3i/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/edvin3i/python-project-49/actions)
 

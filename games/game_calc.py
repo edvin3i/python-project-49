@@ -5,6 +5,7 @@ from games.common_core import game_cycle
 
 
 def get_expression():
+    """Returns random expression for two numbers and random action(+, -, *)"""
     return f"{randint(0, 100)} {choice('+-*')} {randint(0, 100)}"
 
 

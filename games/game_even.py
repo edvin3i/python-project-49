@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from random import randint
 from games.common_core import welcome_user
 from games.common_core import game_cycle

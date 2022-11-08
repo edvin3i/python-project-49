@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
-
 import prompt
 
 
 def welcome_user():
+    """Greets user and asks his/her name. Returns user's name"""
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -11,12 +10,14 @@ def welcome_user():
 
 
 def ask_question(question):
+    """Asks question from input argument and returns user's answer"""
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
     return answer
 
 
 def game_cycle(name, questions, right_answers):
+    """Main game cycle. Recive username, list with questions and list with correct answers"""
     try_num = 0
     while try_num < 3:
         user_answer = ask_question(questions[try_num]).lower()
