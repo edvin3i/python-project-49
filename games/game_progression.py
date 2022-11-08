@@ -4,16 +4,17 @@ from games.common_core import game_cycle
 
 
 def get_progression(max_num_items=5):
-    """Parameter - max number of items in sequence. Returns tuple with 3 sequences (lists) and list with missed items"""
+    """Parameter - max number of items in sequence.
+    Returns tuple with 3 sequences (lists) and list with missed items"""
     result = ()
     sequences = []
     missed_items = []
-    for i in range(3):
+    for _ in range(3):
         d_const = randint(1, 9)
         missed_index = randint(0, max_num_items - 1)
         start = randint(1, 99)
         seq = []
-        for j in range(max_num_items):
+        for _ in range(max_num_items):
             start = start + d_const
             seq.append(str(start))
         missed_items.append(seq[missed_index])
