@@ -1,17 +1,9 @@
-from games.common_core import welcome_user
-from games.common_core import game_cycle
-from random import randint
 
 
-def is_even(num):
-    if num % 2:
-        return 'no'
-    return 'yes'
-
+MSG_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def start_even_game():
-    name = welcome_user('Answer "yes" if the number is even, '
-                        'otherwise answer "no".')
+    name = welcome_user()
 
     questions = [randint(1, 100) for x in range(3)]
     right_answers = [is_even(num) for num in questions]

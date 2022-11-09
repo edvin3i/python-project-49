@@ -1,16 +1,9 @@
-from random import choice
-from random import randint
-from games.common_core import welcome_user
-from games.common_core import game_cycle
+from games import common_core
 
-
-def get_expression():
-    """Returns random expression for two numbers and random action(+, -, *)"""
-    return f"{randint(0, 100)} {choice('+-*')} {randint(0, 100)}"
-
+MSG_RULES = 'What is the result of the expression?'
 
 def start_calc_game():
-    name = welcome_user('What is the result of the expression?')
+    name = welcome_user()
 
     questions = [get_expression() for x in range(3)]
     right_answers = [str(eval(expression)) for expression in questions]

@@ -1,21 +1,9 @@
-from random import randint
-from math import gcd
-from games.common_core import welcome_user
-from games.common_core import game_cycle
 
 
-def get_couple_nums():
-    return f"{randint(0, 100)} {randint(0, 100)}"
-
-
-def get_gcd(couple_nums):
-    num1 = int(couple_nums.split()[0])
-    num2 = int(couple_nums.split()[1])
-    return str(gcd(num1, num2))
-
+MSG_RULES = 'Find the greatest common divisor of given numbers.'
 
 def start_gcd_game():
-    name = welcome_user('Find the greatest common divisor of given numbers.')
+    name = welcome_user()
 
     questions = [get_couple_nums() for x in range(3)]
     right_answers = [get_gcd(couple) for couple in questions]
