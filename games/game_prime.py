@@ -8,6 +8,6 @@ COUNT_NUM = 3
 
 def start_prime_game(game_core=common_core):
     name = game_core.welcome_user(MSG_RULES)
-    questions = common_core.get_num_list(MIN_NUM, MAX_NUM, COUNT_NUM)
-    right_answers = [common_core.is_prime(question) for question in questions]
-    common_core.game_cycle(name, questions, right_answers)
+    questions = game_core.get_num_list(MIN_NUM, MAX_NUM, COUNT_NUM)
+    right_answers = [game_core.is_prime(question) for question in questions]
+    game_core.game_cycle(name, questions, right_answers)

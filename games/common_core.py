@@ -9,7 +9,6 @@ from random import choice
 from string import Template
 import prompt
 
-
 #############################################################################################
 # ==================================== Constants ========================================== #
 #############################################################################################
@@ -18,7 +17,7 @@ MSG_WELCOME = "Welcome to the Brain Games!"
 MSG_ASK_NAME = 'May I have your name? '
 MSG_HELLO = 'Hello, $name!'
 MSG_RIGHT_ANSW = 'Correct!'
-MSG_WRONG_ANSW = "'$user_answer' is wrong answer ;(. Correct answer was '$right_answer'."\
+MSG_WRONG_ANSW = "'$user_answer' is wrong answer ;(. Correct answer was '$right_answer'." \
                  + "\nLet's try again, $name!"
 MSG_CONGRATS = 'Congratulations, $name!'
 
@@ -29,7 +28,7 @@ TRY_NUM = 3
 # ================================== Common funcs ========================================= #
 #############################################################################################
 
-def welcome_user(msg_rules: str):
+def welcome_user(msg_rules: str) -> str:
     """Greets user and asks his/her name. Returns user's name."""
     msg_hello = Template(MSG_HELLO)
     print(MSG_WELCOME)
@@ -41,7 +40,7 @@ def welcome_user(msg_rules: str):
 
 def get_num_list(start: int,
                  stop: int,
-                 count: int):
+                 count: int) -> list:
     """
     Parameters: start, stop, count.
     Returns list of random nums.
@@ -49,7 +48,7 @@ def get_num_list(start: int,
     return [randint(start, stop) for x in range(count)]
 
 
-def ask_question(question: str):
+def ask_question(question: str) -> str:
     """Asks question from input argument and returns user's answer."""
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
@@ -58,7 +57,7 @@ def ask_question(question: str):
 
 def game_cycle(name: str,
                questions: list,
-               right_answers: list):
+               right_answers: list) -> None:
     """
     Main game cycle. Receive username,
     list with questions and list with correct answers.
@@ -72,23 +71,24 @@ def game_cycle(name: str,
             print(MSG_RIGHT_ANSW)
         else:
             print(msg_wrong_answ.substitute(name=name,
-                                      user_answer=user_answer,
-                                      right_answer=right_answers[try_count]))
+                                            user_answer=user_answer,
+                                            right_answer=right_answers[try_count]))
             return
         try_count += 1
     print(msg_congrats.substitute(name=name))
+
 
 #############################################################################################
 # ================================ Games specific funcs =============================== #
 #############################################################################################
 
 
-def get_expression():
+def get_expression() -> str:
     """Returns random expression for two numbers and random action(+, -, *)."""
     return f"{randint(0, 100)} {choice('+-*')} {randint(0, 100)}"
 
 
-def is_prime(num: int):
+def is_prime(num: int) -> str:
     """
     Parameter - is a number.
     Returns 'yes' if it prime or 'no' if not.
@@ -99,7 +99,7 @@ def is_prime(num: int):
     return 'yes'
 
 
-def is_even(num: int):
+def is_even(num: int) -> str:
     """
     Parameter - is a number.
     Returns 'yes' if it even and 'no' if not.
@@ -109,12 +109,12 @@ def is_even(num: int):
     return 'yes'
 
 
-def get_couple_nums():
+def get_couple_nums() -> str:
     """Just returns string with two numbers separated by whitespace."""
     return f"{randint(0, 100)} {randint(0, 100)}"
 
 
-def get_gcd(couple_nums: str):
+def get_gcd(couple_nums: str) -> str:
     """
     Parameter - string with two numbers separated by whitespace.
     Returns greater common divider.
@@ -125,7 +125,7 @@ def get_gcd(couple_nums: str):
 
 
 def get_progression(items_num: int,
-                    max_num_items: int = 5):
+                    max_num_items: int = 5) -> tuple:
     """
     Parameters - max number of items in sequence (default = 5),
     number of items (sequences) in returned tuple
