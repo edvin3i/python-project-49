@@ -1,10 +1,13 @@
-
+from games import common_core
+from random import randint
 
 MSG_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_RND_NUM = 1
+MAX_RND_NUM = 100
 
-def start_even_game():
-    name = welcome_user()
+def start_even_game(game_core=common_core):
+    name = game_core.welcome_user(MSG_RULES)
 
-    questions = [randint(1, 100) for x in range(3)]
-    right_answers = [is_even(num) for num in questions]
-    game_cycle(name, questions, right_answers)
+    questions = [randint(MIN_RND_NUM, MAX_RND_NUM) for x in range(common_core.TRY_NUM)]
+    right_answers = [common_core.is_even(num) for num in questions]
+    common_core.game_cycle(name, questions, right_answers)

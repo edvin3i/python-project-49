@@ -1,10 +1,13 @@
-
+from games import common_core
 
 MSG_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_NUM = 2
+MAX_NUM = 1234
+COUNT_NUM = 3
 
-def start_prime_game():
-    name = welcome_user()
 
-    questions = get_num_list(2, 1234, 3)
-    right_answers = [is_prime(question) for question in questions]
-    game_cycle(name, questions, right_answers)
+def start_prime_game(game_core=common_core):
+    name = game_core.welcome_user(MSG_RULES)
+    questions = common_core.get_num_list(MIN_NUM, MAX_NUM, COUNT_NUM)
+    right_answers = [common_core.is_prime(question) for question in questions]
+    common_core.game_cycle(name, questions, right_answers)
