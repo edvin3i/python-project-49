@@ -14,7 +14,8 @@ def is_even(num: int) -> str:
         return 'no'
     return 'yes'
 
+
 def get_quiz():
-  question = randint(MIN_RND_NUM, MAX_RND_NUM)
-  right_answer = is_even(question)
-  return question, right_answer
+    question = randint(MIN_RND_NUM, MAX_RND_NUM)
+    right_answer = is_even(question)
+    return question, right_answer
