@@ -16,7 +16,7 @@ def get_expression() -> tuple:
     num2 = randint(0, 100)
     operation_sym, operation_fn = choice(OPERATIONS)
     question = f"{num1} {operation_sym} {num2}"
-    right_answer = operation_fn(num1, num2)
+    right_answer = str(operation_fn(num1, num2))
     return question, right_answer
 
 
