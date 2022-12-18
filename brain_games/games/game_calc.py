@@ -10,7 +10,7 @@ OPERATIONS = (
 )
 
 
-def get_expression() -> str:
+def get_expression() -> tuple:
     """Returns random expression for two numbers and random action(+, -, *)."""
     num1 = randint(0, 100)
     num2 = randint(0, 100)
@@ -20,5 +20,5 @@ def get_expression() -> str:
     return question, right_answer
 
 
-def get_quiz():
+def get_quiz() -> tuple:
     return get_expression()

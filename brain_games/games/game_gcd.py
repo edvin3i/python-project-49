@@ -1,6 +1,8 @@
 from math import gcd
+from random import randint
 
 MSG_RULES = 'Find the greatest common divisor of given numbers.'
+
 
 def get_couple_nums() -> str:
     """Just returns string with two numbers separated by whitespace."""
@@ -17,7 +19,7 @@ def get_gcd(couple_nums: str) -> str:
     return str(gcd(num1, num2))
 
 
-def get_quiz():
-  question = get_couple_nums()
-  right_answer = get_gcd(question)
-  return question, right_answer
+def get_quiz() -> tuple:
+    question = get_couple_nums()
+    right_answer = get_gcd(question)
+    return question, right_answer

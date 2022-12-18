@@ -2,6 +2,7 @@ from random import randint
 
 MSG_RULES = 'What number is missing in the progression?'
 
+
 def get_progression(max_num_items: int = 5) -> tuple:
     """
     Parameters - max number of items in sequence (default = 5),
@@ -14,8 +15,8 @@ def get_progression(max_num_items: int = 5) -> tuple:
     start = randint(1, 99)
     seq = []
     for _ in range(max_num_items):
-      start = start + d_const
-      seq.append(str(start))
+        start = start + d_const
+        seq.append(str(start))
     right_answer = seq[missed_index]
     seq[missed_index] = '..'
     question = ' '.join(seq)
@@ -23,4 +24,4 @@ def get_progression(max_num_items: int = 5) -> tuple:
 
 
 def get_quiz():
-  return get_progression()
+    return get_progression()

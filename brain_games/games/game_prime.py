@@ -3,17 +3,6 @@ from random import randint
 MSG_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUM = 2
 MAX_NUM = 1234
-COUNT_NUM = 3
-
-
-def get_num_list(start: int,
-                 stop: int,
-                 count: int) -> list:
-    """
-    Parameters: start, stop, count.
-    Returns list of random nums.
-    """
-    return [randint(start, stop) for x in range(count)]
 
 
 def is_prime(num: int) -> str:
@@ -27,7 +16,7 @@ def is_prime(num: int) -> str:
     return 'yes'
 
 
-def get_quiz():
-  question = get_num_list(MIN_NUM, MAX_NUM, COUNT_NUM)
-  right_answer = is_prime(question)
-  return question, right_answer
+def get_quiz() -> tuple:
+    question = randint(MIN_NUM, MAX_NUM)
+    right_answer = is_prime(question)
+    return question, right_answer
