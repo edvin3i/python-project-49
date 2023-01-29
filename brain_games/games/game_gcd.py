@@ -10,16 +10,16 @@ def get_couple_nums() -> tuple:
     return randint(MIN_RAND_NUM, MAX_RAND_NUM), randint(MIN_RAND_NUM, MAX_RAND_NUM)
 
 
-def get_gcd(couple_nums: tuple) -> str:
+def get_gcd(num1: int, num2: int) -> str:
     """
     Parameter - string with two numbers separated by whitespace.
     Returns greater common divider.
     """
-    num1, num2 = couple_nums
     return str(gcd(num1, num2))
 
 
 def get_quiz() -> tuple:
-    question = get_couple_nums()
-    right_answer = get_gcd(question)
+    num1, num2 = get_couple_nums()
+    question = f'{num1, num2}'
+    right_answer = get_gcd(num1, num2)
     return question, right_answer
