@@ -5,9 +5,11 @@ MSG_RULES = 'Find the greatest common divisor of given numbers.'
 MIN_RAND_NUM = 0
 MAX_RAND_NUM = 100
 
+
 def get_couple_nums() -> tuple:
     """Just returns string with two numbers separated by whitespace."""
-    return randint(MIN_RAND_NUM, MAX_RAND_NUM), randint(MIN_RAND_NUM, MAX_RAND_NUM)
+    return randint(MIN_RAND_NUM, MAX_RAND_NUM), \
+           randint(MIN_RAND_NUM, MAX_RAND_NUM)
 
 
 def get_gcd(num1: int, num2: int) -> str:

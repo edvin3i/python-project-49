@@ -6,6 +6,7 @@ MAX_RAND_NUM_CONST = 9
 MIN_RAND_NUM_START = 1
 MAX_RAND_NUM_START = 99
 
+
 def get_progression(max_num_items: int = 5) -> tuple:
     """
     Returns tuple with sequences (lists) and list with missed items.
