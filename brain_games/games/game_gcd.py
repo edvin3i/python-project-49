@@ -20,6 +20,6 @@ def get_gcd(num1: int, num2: int) -> str:
 
 def get_quiz() -> tuple:
     num1, num2 = get_couple_nums()
-    question = f'{num1, num2}'
+    question = f'{num1}, {num2}'
     right_answer = get_gcd(num1, num2)
     return question, right_answer
