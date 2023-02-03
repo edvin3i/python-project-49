@@ -42,6 +42,10 @@ poetry install
 8. And run the game the following command:
 ```bash
 poetry run <game-name>
+
+# For example:
+
+poetry run brain-calc
 ```
 9. Enjoy!
 
