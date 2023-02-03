@@ -8,11 +8,38 @@
 
 ### Set of five console games:
 
-- Calculator
-- Even numbers
-- Greater Common Divisor
-- Prime numbers
-- Arithmetic Progression
+- Calculator (brain-calc)
+- Even numbers (brain-even)
+- Greater Common Divisor (brain-gcd)
+- Prime numbers (brain-prime)
+- Arithmetic Progression (brain-progression)
+
+### Installiation
+
+1. Open the terminal or command prompt on your computer.
+2. Change to the directory where the game will be located using the "cd" command. For example:
+```
+cd ~/Downloads/
+```
+3. Make sure you have Python and Poetry installed on your system.
+If not, you can follow the instructions on the official Python and Poetry websites to install them.
+4. Clone the game repository from Github to your local machine using the following command:
+```
+git clone https://github.com/edvin3i/python-project-49.git BrainGames
+```
+5. Change the current directory to the cloned repository using the following command:
+```
+cd BrainGames
+```
+6. Install the required dependencies by running the following command:
+```
+poetry install
+```
+7. And run the game the following command:
+```
+poetry run <game-name>
+```
+8. Enjoy!
 
 
 
