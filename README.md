@@ -18,28 +18,32 @@
 
 1. Open the terminal or command prompt on your computer.
 2. Change to the directory where the game will be located using the "cd" command. For example:
-```
+```bash
 cd ~/Downloads/
 ```
 3. Make sure you have Python and Poetry installed on your system.
 If not, you can follow the instructions on the official Python and Poetry websites to install them.
 4. Clone the game repository from Github to your local machine using the following command:
-```
+```bash
 git clone https://github.com/edvin3i/python-project-49.git BrainGames
 ```
 5. Change the current directory to the cloned repository using the following command:
-```
+```bash
 cd BrainGames
 ```
-6. Install the required dependencies by running the following command:
+6. Start the poetry shell (virtual environment):
+```bash
+poetry shell
 ```
+7. Install the required dependencies by running the following command:
+```bash
 poetry install
 ```
-7. And run the game the following command:
-```
+8. And run the game the following command:
+```bash
 poetry run <game-name>
 ```
-8. Enjoy!
+9. Enjoy!
 
 
 
