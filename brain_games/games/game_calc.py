@@ -1,4 +1,5 @@
 from random import randint, choice
+from brain_games.utils import get_answer
 import operator
 
 
@@ -12,13 +13,15 @@ OPERATIONS = (
 )
 
 
+
+
 def get_expression() -> tuple:
     """Returns random expression for two numbers and random action(+, -, *)."""
     num1 = randint(MIN_RAND_NUM, MAX_RAND_NUM)
     num2 = randint(MIN_RAND_NUM, MAX_RAND_NUM)
     operation_sym, operation_fn = choice(OPERATIONS)
     question = f"{num1} {operation_sym} {num2}"
-    right_answer = str(operation_fn(num1, num2))
+    right_answer = get_answer(operation_fn(num1, num2))
     return question, right_answer
 
 

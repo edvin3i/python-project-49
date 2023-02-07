@@ -6,9 +6,6 @@ Module represents some functions needed for arithmetic games.
 from string import Template
 import prompt
 
-##############################################################################
-# ==================================== Constants =========================== #
-##############################################################################
 
 MSG_WELCOME = "Welcome to the Brain Games!"
 MSG_ASK_NAME = 'May I have your name? '
@@ -20,10 +17,6 @@ MSG_WRONG_ANSW = "'$user_answer' is wrong answer ;(." \
 MSG_CONGRATS = 'Congratulations, $name!'
 
 TRY_NUM = 3
-
-##############################################################################
-# ================================== Common funcs ========================== #
-##############################################################################
 
 
 def welcome_user(msg_rules: str) -> str:
@@ -43,7 +36,7 @@ def ask_question(question: str) -> str:
     return answer
 
 
-def game_cycle(game) -> None:
+def run_game(game) -> None:
     """
     Main game cycle. Receive username,
     list with questions and list with correct answers.
