@@ -8,6 +8,7 @@ MIN_RAND_NUM_START = 1
 MAX_RAND_NUM_START = 99
 MAX_NUM_ITEMS = 5
 
+
 def get_progression() -> tuple:
     """
     Returns tuple with sequences (lists) and list with missed items.
@@ -20,7 +21,7 @@ def get_progression() -> tuple:
         start = start + d_const
         seq.append(str(start))
     return seq
-    
+
 
 def get_question(progr):
     missed_index = randint(0, len(progr) - 1)

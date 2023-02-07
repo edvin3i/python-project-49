@@ -13,8 +13,6 @@ OPERATIONS = (
 )
 
 
-
-
 def get_expression() -> tuple:
     """Returns random expression for two numbers and random action(+, -, *)."""
     num1 = randint(MIN_RAND_NUM, MAX_RAND_NUM)
