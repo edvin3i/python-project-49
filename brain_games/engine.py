@@ -49,6 +49,7 @@ def run_game(game) -> None:
     while try_count:
         question, right_answer = game.get_quiz()
         user_answer = ask_question(question).lower()
+        print(right_answer)
         if right_answer != user_answer:
             print(
                 msg_wrong_answ.substitute(name=name,
